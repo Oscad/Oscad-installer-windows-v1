@@ -11,4 +11,3 @@ mv $sourceProject.cir.out $targetProject.cir.out
 mv $sourceProject.pro $targetProject.pro
 mv $sourceProject.proj $targetProject.proj
 mv $sourceProject.sch $targetProject.sch
-
