@@ -103,13 +103,14 @@ class PageTwo(wx.lib.scrolledpanel.ScrolledPanel):
     grid1.Add(wx.StaticText(self,-1,''),0)
     hbox = wx.BoxSizer(wx.HORIZONTAL)
     self.Heading = wx.StaticText(self, -1, 'Sweep Variable',  (150, 100), (120, -1))
-    font = wx.Font(10, wx.BOLD, wx.BOLD, wx.BOLD)
-    self.Heading.SetFont(font)
+    #font is not working in windows. Need to figure it out
+	#font = wx.Font(10, wx.BOLD, wx.BOLD, wx.BOLD)
+    #self.Heading.SetFont(font)
     hbox.Add(self.Heading)
     self.space = wx.StaticText(self, -1, '',  (150, 75), (150, -1))
     hbox.Add(self.space)
     self.Heading2 = wx.StaticText(self, -1, 'Secondary Sweep',  (150, 75), (200, -1))	
-    self.Heading2.SetFont(font)
+    #self.Heading2.SetFont(font)
     hbox.Add(self.Heading2)
     grid1.Add(hbox,0)
 
