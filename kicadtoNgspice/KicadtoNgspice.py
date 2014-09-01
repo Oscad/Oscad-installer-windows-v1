@@ -336,6 +336,7 @@ def convertICintoBasicBlocks(schematicInfo,outputOption):
           schematicInfo.append("a"+str(k)+" ["+words[i+1]+"] ["+words[i+1]+"_in] "+" "+compName+"adc")
           k=k+1
         # Add two-input And gate
+          print "My Word",words[i+2]+"_out"
           schematicInfo.append("a"+str(k)+" ["+words[i]+"_in "+words[i+1]+"_in] "+words[i+2]+"_out "+compName)
           k=k+1
         # Add digital to analog converter for output C
